@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3108693123914944831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3320426985678197209}
+  - component: {fileID: 5659346746038388390}
+  - component: {fileID: 20604487223397605}
+  - component: {fileID: 1972867675008002510}
+  m_Layer: 0
+  m_Name: voice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3320426985678197209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108693123914944831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8543201323367903692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5659346746038388390
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108693123914944831}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &20604487223397605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108693123914944831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20258c641c94f0ea3dc32cfe3de904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logCsoundOutput: 0
+  mute: 0
+  processClipAudio: 0
+  loudVolumeWarning: 1
+  loudWarningThreshold: 10
+  csoundScore: 
+  environmentSettings: []
+  _csoundFileGUID: 49086b9889bae479693cb8928f19a469
+  _csoundString: "<Cabbage> bounds(0, 0, 0, 0)\nform caption(\"Theremin\") size(700,
+    300), guiMode(\"queue\"), pluginId(\"thm1\")\nrslider    bounds(  0, 40, 80,
+    80), valueTextBox(1), textBox(1), text(\"Att.\"), channel(\"Attack\"),  range(0, 
+    5, 0.15)\nrslider    bounds(100, 40, 80, 80), valueTextBox(1), textBox(1), text(\"Gain\"),
+    channel(\"Gain\"),  range(0,  1, 0.65)\nrslider    bounds(200, 40, 80, 80), valueTextBox(1),
+    textBox(1), text(\"Glide\"), channel(\"Glide\"),  range(0,  1, 0.15)\nrslider   
+    bounds(300, 40, 80, 80), valueTextBox(1), textBox(1), text(\"Lfo Freq\"), channel(\"Lfo\"), 
+    range(0,  100, 7)\nrslider    bounds(300, 40, 80, 80), valueTextBox(1), textBox(1),
+    text(\"Lfo Amp\"), channel(\"LfoAmp\"),  range(0,  100, 8.5)\nrslider    bounds(400,
+    40, 80, 80), valueTextBox(1), textBox(1), text(\"Filter Freq\"), channel(\"FiltFreq\"), 
+    range(100,  5000, 1000)\nrslider    bounds(500, 40, 80, 80), valueTextBox(1),
+    textBox(1), text(\"Filter Res\"), channel(\"FiltRes\"),  range(0,  0.95, .066)\nrslider   
+    bounds(600, 40, 80, 80), valueTextBox(1), textBox(1), text(\"Table\"), channel(\"Table\"), 
+    range(0,  3.99, 1.5)\n</Cabbage>\n<CsoundSynthesizer>\n<CsOptions>\n-n -d \n</CsOptions>\n<CsInstruments>\nsr
+    = 48000\nksmps = 64\nnchnls = 2\n0dbfs = 1\n\nchn_k \"Frequency\", 1\nchn_k \"Amplitude\",
+    1 \n\n;courtesy Iain McCurdy\nopcode    lineto2,k,kk\n kinput,ktime    xin\n
+    ktrig    changed    kinput,ktime    ; reset trigger\n if ktrig==1 then                   
+    ; if new note has been received or if portamento time has been changed...\n 
+    reinit RESTART\n endif\n RESTART:                            ; restart 'linseg'
+    envelope\n if i(ktime)==0 then                 ; 'linseg' fails if duration is
+    zero...\n  koutput    =    i(kinput)          ; ...in which case output simply
+    equals input\n else\n  koutput    linseg    i(koutput),i(ktime),i(kinput)   
+    ; linseg envelope from old value to new value\n endif\n rireturn\n         xout   
+    koutput\nendop\n\n\ninstr 1\n\nkat chnget \"Attack\"\nkport chnget \"Glide\"\nkfreq
+    chnget \"Frequency\"\nkamp chnget \"Amplitude\"\nklfo chnget \"Lfo\"\nklfoamp
+    chnget \"LfoAmp\"\nkfiltf chnget \"FiltFreq\"\nkfiltres chnget \"FiltRes\"\nkgain
+    chnget \"Gain\"\nktable chnget \"Table\"\n\nkPortTime linseg  0, 0.001, 1\nkEnvTime
+    linseg 0, 0.001, 1\n\nkcps     lineto2    kfreq, kPortTime * kport    \nkenv    
+    lineto2    kamp, kEnvTime * kat \nkff      lineto2    kfiltf, 0.01\nkfr     
+    lineto2    kfiltres, 0.01\n\nalfo lfo klfoamp, klfo, 0\nftmorf ktable, 99, 100\naosc
+    oscili kenv, kcps + alfo, 100\naout moogladder aosc, kff, kfr\n\nouts aout*kgain,
+    aout*kgain\nendin\n\n</CsInstruments>\n<CsScore>\n;causes Csound to run for about
+    7000 years...\nf0 3600\nf1 0 16384 10 1                                         
+    ; Sine\nf2 0 16384 10 1 0.5 0.3 0.25 0.2 0.167 0.14 0.125 .111   ; Sawtooth\nf3
+    0 16384 10 1 0   0.3 0    0.2 0     0.14 0     .111   ; Square\nf4 0 16384 10
+    1 1   1   1    0.7 0.5   0.3  0.1          ; Pulse\nf5 0 16384 10 1 0.3 0.05
+    0.1 0.01                        ; Custom\nf99  0 5 -2 1 2 3 4 5                                   
+    ; the table that contains the numbers of tables used by ftmorf\nf100 0 16384
+    10 1                                        ; the table that will be written
+    by ftmorf\ni1 0 3600\n</CsScore>\n</CsoundSynthesizer>\n\n"
+  _csoundFileName: Theremin.csd
+  _csoundAsset: {fileID: 102900000, guid: 49086b9889bae479693cb8928f19a469, type: 3}
+  _channels:
+  - type: form
+    channel: 
+    text: 
+    caption: Theremin
+    min: 0
+    max: 0
+    value: 0
+    skew: 0
+    increment: 0
+    options: []
+  - type: rslider
+    channel: Attack
+    text: Att.
+    caption: 
+    min: 0
+    max: 5
+    value: 0.15
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: Gain
+    text: Gain
+    caption: 
+    min: 0
+    max: 1
+    value: 0.65
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: Glide
+    text: Glide
+    caption: 
+    min: 0
+    max: 1
+    value: 0.15
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: Lfo
+    text: Lfo Freq
+    caption: 
+    min: 0
+    max: 100
+    value: 7
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: LfoAmp
+    text: Lfo Amp
+    caption: 
+    min: 0
+    max: 100
+    value: 8.5
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: FiltFreq
+    text: Filter Freq
+    caption: 
+    min: 100
+    max: 5000
+    value: 1000
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: FiltRes
+    text: Filter Res
+    caption: 
+    min: 0
+    max: 0.95
+    value: 0.066
+    skew: 1
+    increment: 1
+    options: []
+  - type: rslider
+    channel: Table
+    text: Table
+    caption: 
+    min: 0
+    max: 3.99
+    value: 1.5
+    skew: 1
+    increment: 1
+    options: []
+  _availableAudioChannels: []
+  _drawCsoundString: 0
+  _drawTestScore: 0
+  _drawSettings: 0
+  _drawChannels: 0
+  _drawAudioChannels: 0
+  _drawPresets: 0
+  _drawPresetsLoad: 0
+  _drawPresetsSave: 0
+  _drawPresetsImport: 0
+  _showRuntimeEnvironmentPath: 0
+  _currentPreset: 
+  _currentPresetSaveFolder: 
+  _currentPresetLoadFolder: 
+--- !u!114 &1972867675008002510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108693123914944831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b6b205bbc63417d8c9f1de86cff88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHand: {fileID: 7535864869369595852}
+  rightHand: {fileID: 1899568774419612717}
+  head: {fileID: 3484718236617772930}
+  leftfeet: {fileID: 1474352348332053795}
+  _out1: 0
+  _freqRange: {x: 220, y: 1100}
+--- !u!1001 &6101952566183087635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405196372399062692, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_Name
+      value: SDTRobot Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405196372399062692, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3320426985678197209}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 227149722f9d24421b5745e762fb6934, type: 3}
+--- !u!1 &1474352348332053795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4673485313861491504, guid: 227149722f9d24421b5745e762fb6934,
+    type: 3}
+  m_PrefabInstance: {fileID: 6101952566183087635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899568774419612717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5688858026347645502, guid: 227149722f9d24421b5745e762fb6934,
+    type: 3}
+  m_PrefabInstance: {fileID: 6101952566183087635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3484718236617772930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7273956898058912145, guid: 227149722f9d24421b5745e762fb6934,
+    type: 3}
+  m_PrefabInstance: {fileID: 6101952566183087635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7535864869369595852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4339984237680560607, guid: 227149722f9d24421b5745e762fb6934,
+    type: 3}
+  m_PrefabInstance: {fileID: 6101952566183087635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8543201323367903692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2459512753557995487, guid: 227149722f9d24421b5745e762fb6934,
+    type: 3}
+  m_PrefabInstance: {fileID: 6101952566183087635}
+  m_PrefabAsset: {fileID: 0}
